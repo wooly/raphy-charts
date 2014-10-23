@@ -36,6 +36,8 @@ class BarChartOptions
 
     x_padding: 25
     y_padding: 40
+
+    y_axis_scale: []
   }
 
 

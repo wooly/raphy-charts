@@ -83,6 +83,9 @@ class BarChart extends BaseChart
 
     [max_x, min_x, max_y, min_y] = Scaling.get_ranges_for_points(points)
     
+    if @options.y_axis_scale.length == 2
+      [min_y, max_y] = @options.y_axis_scale
+    
     y_scaler = new Scaler()
     .domain([min_y, max_y])
     .range([@options.y_padding, @height - @options.y_padding])

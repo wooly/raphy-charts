@@ -339,7 +339,28 @@ $(document).ready(function() {
 
 
 
-   
+   var bars2 = new Charts.BarChart('scaledbarchart', {
+     x_label_color: "#00aadd",
+     y_axis_scale: [0, 1000]
+    });
+
+   bars2.add({
+     label: "foo",
+     value: 500,
+   });
+
+   bars2.add({
+     label: "moo",
+     value: 500
+   });
+
+   bars2.add({
+     label: "doo",
+     value: 500
+   });
+
+   bars2.draw();
+
 
    var node = document.getElementById('indexchart');
    var index = Charts.IndexChart(node);
